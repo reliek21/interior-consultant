@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #181719;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 img {
@@ -41,7 +41,7 @@ header nav .logo {
 header nav .logo .box-logo {
   width: 102px;
   height: 32px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -49,7 +49,7 @@ header nav .logo .box-logo {
   transition: border 0.3s ease;
 }
 header nav .logo .box-logo:hover {
-  border: 1px solid #F7542E;
+  border: 1px solid #f7542e;
 }
 header nav .logo .box-logo a {
   font-family: "Crimson Pro", serif;
@@ -57,7 +57,7 @@ header nav .logo .box-logo a {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 header nav ul {
   width: 35%;
@@ -72,7 +72,7 @@ header nav ul li a {
   font-weight: 500;
   font-size: 18px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: font-weight 0.3s ease;
 }
 header nav ul li a:hover {
@@ -114,7 +114,7 @@ section .box-left .box-read-more a {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   transition: margin-right 0.3s ease;
 }
@@ -169,7 +169,7 @@ section .box-right .info .person .person-info .pro {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
-  color: #A9A9A9;
+  color: #a9a9a9;
 }
 section .box-right .info .title {
   margin-top: 1rem;
@@ -179,7 +179,7 @@ section .box-right .info .title a {
   font-weight: 700;
   font-size: 24px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section .box-right .info .title a:hover {
   text-decoration: underline;
@@ -193,10 +193,10 @@ footer p {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #A9A9A9;
+  color: #a9a9a9;
 }
 footer p a {
-  color: #F7542E;
+  color: #f7542e;
   margin-left: 0.5rem;
   text-decoration: none;
 }
@@ -379,7 +379,7 @@ footer .border {
     margin: 0 auto;
     width: 70%;
     margin-bottom: 0.7rem;
-    background-color: #A9A9A9;
+    background-color: #a9a9a9;
   }
 }
 @media screen and (max-width: 320px) {

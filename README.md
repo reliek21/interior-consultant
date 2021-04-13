@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://kelex21.github.io/interior-consultant/">
+    <a href="https://kelex-21.github.io/interior-consultant/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/7iQOz6ERGc5xG6oaST0P">
+    <a href="https://devchallenges.io/solutions/6kLUF5a8Yp9VrIhjFSMC">
       Solution
     </a>
     <span> | </span>
