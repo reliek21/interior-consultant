@@ -1,0 +1,433 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #181719;
+  color: #FFFFFF;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+header {
+  width: 95%;
+  margin: 0 auto;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+header nav .logo {
+  width: 65%;
+}
+header nav .logo .box-logo {
+  width: 102px;
+  height: 32px;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.3s ease;
+}
+header nav .logo .box-logo:hover {
+  border: 1px solid #F7542E;
+}
+header nav .logo .box-logo a {
+  font-family: "Crimson Pro", serif;
+  font-weight: 200;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+header nav ul {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: font-weight 0.3s ease;
+}
+header nav ul li a:hover {
+  font-weight: 700;
+}
+header nav .icon-menu {
+  display: none;
+}
+header .nav-mobile {
+  display: none;
+}
+
+section {
+  width: 95%;
+  display: flex;
+  margin: 10rem auto;
+  margin-bottom: 15rem;
+}
+section .box-left {
+  width: 40%;
+}
+section .box-left h1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: 3rem;
+}
+section .box-left p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 3rem;
+}
+section .box-left .box-read-more {
+  display: flex;
+  align-items: center;
+}
+section .box-left .box-read-more a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: margin-right 0.3s ease;
+}
+section .box-left .box-read-more a:hover {
+  text-decoration: underline;
+  margin-right: 0.5rem;
+}
+section .box-left .box-read-more .arrow-right {
+  margin-left: 0.7rem;
+}
+section .box-right {
+  width: 60%;
+  position: relative;
+}
+section .box-right img {
+  opacity: 0;
+  animation: opacity 4s forwards alternate;
+  float: right;
+  width: 100%;
+  height: 555px;
+}
+section .box-right .info {
+  opacity: 0;
+  animation: moveLeft 1.5s forwards alternate;
+  width: 410px;
+  height: 189px;
+  background-color: #181719;
+  position: absolute;
+  top: 30rem;
+  left: 32.5rem;
+  padding: 1.5rem;
+}
+section .box-right .info .person {
+  display: flex;
+  align-items: center;
+}
+section .box-right .info .person .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+section .box-right .info .person .person-info {
+  margin-left: 1rem;
+}
+section .box-right .info .person .person-info .name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+section .box-right .info .person .person-info .pro {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #A9A9A9;
+}
+section .box-right .info .title {
+  margin-top: 1rem;
+}
+section .box-right .info .title a {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+section .box-right .info .title a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #A9A9A9;
+}
+footer p a {
+  color: #F7542E;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+footer .border {
+  display: none;
+}
+
+@media screen and (max-width: 1366px) {
+  header {
+    width: 85%;
+  }
+
+  section {
+    width: 85%;
+    margin: 6rem auto;
+    margin-bottom: 13rem;
+  }
+  section .box-left h1 {
+    font-size: 40px;
+  }
+  section .box-left p {
+    font-size: 20px;
+  }
+  section .box-right img {
+    height: 390px;
+  }
+  section .box-right .info {
+    top: 19.5rem;
+    left: 15.5rem;
+  }
+}
+@media screen and (max-width: 1068px) {
+  header nav .logo {
+    width: 50%;
+  }
+  header nav ul {
+    width: 50%;
+  }
+
+  section {
+    margin-bottom: 19rem;
+  }
+  section .box-left h1 {
+    font-size: 35px;
+    margin-bottom: 2rem;
+  }
+  section .box-left p {
+    font-size: 15px;
+    margin-bottom: 2rem;
+  }
+  section .box-left .box-read-more a {
+    font-size: 14px;
+  }
+  section .box-right img {
+    width: 100%;
+    height: 350px;
+  }
+  section .box-right .info {
+    width: 350px;
+    top: 17.1rem;
+    left: 10.5rem;
+  }
+  section .box-right .info .person .person-info .name {
+    font-size: 12px;
+  }
+  section .box-right .info .person .person-info .pro {
+    font-size: 10px;
+  }
+  section .box-right .info .title a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    width: 100%;
+    margin: -1.5rem auto;
+    padding: 0 1rem;
+  }
+  header nav {
+    justify-content: space-between;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav .icon-menu {
+    display: block;
+    animation: opacity 1s ease forwards backwards;
+    font-size: 35px;
+    color: #f2f2f2;
+  }
+  header .nav-mobile {
+    opacity: 0;
+    animation: opacity 0.5s ease forwards;
+    background-color: #181719;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+  }
+  header .nav-mobile ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+  }
+  header .nav-mobile ul li {
+    margin: 1rem 0;
+  }
+  header .nav-mobile ul li a {
+    animation: transform 0.5s ease forwards alternate;
+  }
+  header .nav-mobile ul li a:hover {
+    transition: font-weight 0.3s ease;
+    font-weight: 700;
+  }
+  header .nav-mobile .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 35px;
+    margin: 1.4rem 1rem;
+    animation: opacity 1s ease forwards both;
+  }
+
+  section {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0.7rem;
+    margin-top: 3.5rem;
+    margin-bottom: 9rem;
+  }
+  section .box-left {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  section .box-left p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  section .box-left .box-read-more a {
+    font-size: 14px;
+  }
+  section .box-right {
+    width: 100%;
+  }
+  section .box-right img {
+    height: 270px;
+  }
+  section .box-right .info {
+    top: 13rem;
+    left: 2.5rem;
+    width: 300px;
+    height: 138px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  section .box-right .info .person .image img {
+    width: 36px;
+    height: 36px;
+  }
+  section .box-right .info .person .image .person-info .name {
+    font-size: 12px;
+  }
+  section .box-right .info .person .image .person-info .pro {
+    font-size: 10px;
+  }
+  section .box-right .info .title a {
+    font-size: 18px;
+  }
+
+  footer .border {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 0.7rem;
+    background-color: #A9A9A9;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .nav-mobile ul {
+    margin-top: 10rem;
+  }
+
+  section .box-right .info {
+    width: 270px;
+    left: 1rem;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes transform {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    font-size: 30px;
+    opacity: 1;
+  }
+  75% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 18px;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-25rem);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
